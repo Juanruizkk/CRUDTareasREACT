@@ -4,7 +4,7 @@ import Tarea from "./Tarea";
 
 const ListaTareas = () => {
     return (
-        <section className="container">
+        <section className="container mt-3">
             <ListGroup>
                 <Tarea></Tarea>
                 <Tarea></Tarea>

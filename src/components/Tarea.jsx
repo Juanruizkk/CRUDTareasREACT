@@ -1,4 +1,5 @@
 import { XCircle } from "react-bootstrap-icons";
+
 import { Button, ListGroup } from "react-bootstrap";
 
 const Tarea = () => {
