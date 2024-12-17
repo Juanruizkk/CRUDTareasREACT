@@ -26,6 +26,8 @@ const FormularioTarea = () => {
   const borrarTarea = (nombreTarea) => {
     //listaTareas.splice()
     const tareasFiltratas = listaTareas.filter((tarea) => tarea !== nombreTarea);
+    setListaTareas(tareasFiltratas);
+
   }
 
 
@@ -51,7 +53,7 @@ const FormularioTarea = () => {
           <PlusCircle></PlusCircle>
         </Button>
       </Form >
-      <ListaTareas className='mt-5' listaTareas={listaTareas}></ListaTareas>
+      <ListaTareas className='mt-5' listaTareas={listaTareas} borrarTarea={borrarTarea}></ListaTareas>
     </section>
   );
 };
