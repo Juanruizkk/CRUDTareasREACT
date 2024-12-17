@@ -2,13 +2,13 @@ import { ListGroup } from "react-bootstrap";
 import Tarea from "./Tarea";
 
 
-const ListaTareas = () => {
+const ListaTareas = ({ listaTareas }) => {
     return (
         <section className="container mt-3">
             <ListGroup>
-                <Tarea></Tarea>
-                <Tarea></Tarea>
-                <Tarea></Tarea>
+                {
+                    listaTareas.map((tarea, posicion) => <Tarea key={posicion} tarea={tarea}></Tarea>)
+                }
             </ListGroup>
         </section>
     );

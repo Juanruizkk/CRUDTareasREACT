@@ -24,6 +24,7 @@ const FormularioTarea = () => {
   }
 
 
+
   return (
     <section className="mb-4">
       <Form onSubmit={handleSubmit(posteriorValidacion)} className="container d-flex" >
@@ -45,7 +46,7 @@ const FormularioTarea = () => {
           <PlusCircle></PlusCircle>
         </Button>
       </Form >
-      <ListaTareas className='mt-5'></ListaTareas>
+      <ListaTareas className='mt-5' listaTareas={listaTareas}></ListaTareas>
     </section>
   );
 };
