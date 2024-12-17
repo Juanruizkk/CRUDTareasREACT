@@ -23,6 +23,11 @@ const FormularioTarea = () => {
 
   }
 
+  const borrarTarea = (nombreTarea) => {
+    //listaTareas.splice()
+    const tareasFiltratas = listaTareas.filter((tarea) => tarea !== nombreTarea);
+  }
+
 
 
   return (
